@@ -1,0 +1,16 @@
+// IMPORT CUSTOM 
+@use "custom";
+
+// IMPORT COMPONENTS
+@use './components/buttons';
+@use './components/mixins';
+@use './components/typography';
+
+// IMPORT SECTIONS
+@use './sections/navbar';
+@use './sections/heroArea';
+@use './sections/content';
+@use './sections/favoriteTopics';
+@use './sections/aboutUs';
+@use './sections/prices';
+@use './sections/footer';

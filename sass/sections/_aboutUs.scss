@@ -1,0 +1,76 @@
+@use "../custom" as *;
+
+.aboutUs {
+  @include margin(6.5rem 0 0);
+  .aboutUsTitle {
+    // media quary
+    @include media-breakpoint-down(xl) {
+      width: 70%;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+    border-radius: 3rem 3rem 0 3rem;
+    width: 60%;
+    margin: auto;
+    .display-4 {
+    }
+  }
+
+  .leftAboutUs {
+    border-radius: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+
+    p {
+      // media breakpoint
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+        height: fit-content;
+      }
+      background-color: $inputBG;
+      border-radius: 2rem 2rem 0;
+      @include padding(1.5rem);
+      margin-left: 3.125rem;
+
+      &:nth-child(2) {
+        // media queary
+        @include media-breakpoint-down(lg) {
+          margin-right: 0;
+        }
+        margin-left: 0;
+        margin-right: 3.125rem;
+        border-radius: 2rem 2rem 2rem 0;
+      }
+    }
+    button {
+      // media quary
+      @include media-breakpoint-down(md) {
+        grid-area: 2;
+      }
+      justify-self: center;
+      @include padding(0.75rem 5rem);
+      width: fit-content;
+    }
+  }
+
+  .rightAboutUs {
+    border-radius: 1.5rem;
+    @include padding(1.5rem);
+
+    & > div {
+      // media quary
+      @include media-breakpoint-down(lg){
+        transform: none;
+      };
+      transform: translateY(20%);
+      .display-4 {
+        span {
+        }
+      }
+      p {
+      }
+    }
+  }
+}

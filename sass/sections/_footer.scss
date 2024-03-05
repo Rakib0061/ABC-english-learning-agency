@@ -1,0 +1,74 @@
+@use "../custom" as *;
+
+footer {
+  @include margin(6.5rem 0 0);
+
+  .foote_title {
+    @include margin(0 0 2.5rem);
+
+    .display-6 {
+        // media quiry
+        @include media-breakpoint-down(lg){
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+        @include media-breakpoint-down(md){
+            padding-left: 0;
+            padding-right: 0;
+        }
+      em {
+        font-style: normal;
+      }
+    }
+    .btn {
+      @include padding(0.75rem 2rem);
+    }
+  }
+
+  .footer-list {
+    .support {
+      &:nth-child(2) {
+        // media quiry
+        @include media-breakpoint-down(sm){
+            padding: 0
+        };
+        @include padding(0 2.5rem 0);
+      }
+      p {
+        font-weight: $font-weight-medium;
+      }
+      .list-group {
+        .list-group-item {
+          background-color: transparent;
+          .nav-link {
+            @include rfs(1rem);
+            font-weight: $font-weight-normal;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    @include margin(2.5rem 0 );
+    color: $gray;
+  }
+
+  .copWriteSection {
+    @include margin(0 0 2.5rem);
+    li {
+      list-style: none;
+      @include padding(0 0.625rem 0);
+      .nav-link {
+        transition: all 0.1s linear;
+        i {
+            @include rfs(1.25rem)
+        }
+
+        &:hover {
+            transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

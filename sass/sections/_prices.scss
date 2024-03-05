@@ -1,0 +1,56 @@
+@use "../custom" as *;
+
+.prices {
+  @include margin(6.5rem 0 0);
+  .pricesTitle {
+    // media quiry
+    @include media-breakpoint-down(lg){
+      width: 60%;
+    }
+    border-radius: 3rem 3rem 3rem 0;
+    width: 30%;
+    margin: auto;
+    .display-5 {
+    }
+  }
+
+  .bechameTeacher {
+    // media quiary
+    @include media-breakpoint-down(md) {
+      @include padding(1.25rem);
+    }
+    @include padding(2.5rem 3rem);
+    border-radius: 1.5rem;
+
+    .display-5 {
+      // media quiry
+      @include media-breakpoint-down(lg) {
+        padding-right: 0;
+      }
+      em {
+        font-style: normal;
+      }
+    }
+    a {
+      @include margin(0.625rem 0);
+      i {
+        @include padding(0.3125rem 0);
+        color: $white;
+      }
+      &:hover i {
+        color: $secondary;
+      }
+    }
+  }
+  .teacherGAllary {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    gap: 1rem;
+
+    img {
+      border-radius: 1.5rem;
+      object-fit: cover;
+    }
+  }
+}

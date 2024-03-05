@@ -1,0 +1,210 @@
+@use "../custom" as *;
+
+.heroArea {
+  margin-bottom: 3.5rem;
+  .complexHeroSection {
+    // media quary start
+    @include media-breakpoint-down(xl) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 1rem;
+    }
+    @include media-breakpoint-down(lg) {
+      grid-template-rows: auto;
+      grid-template-columns: auto;
+    }
+    // media quary end
+
+    @include margin(3.5rem 0 2rem);
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 0.4fr 0.7fr 0.3fr 0.4fr;
+    grid-auto-flow: dense;
+
+    .display-1 {
+      &--improve {
+        // media quary start
+        @include media-breakpoint-down(xl) {
+          grid-column: 1/-1;
+          grid-row: 1;
+          margin: 0;
+        }
+        // media quary end
+      }
+      &--native {
+        // media quary start
+        @include media-breakpoint-down(xl) {
+          grid-column: 1/-1;
+          grid-row: 2;
+          margin: 0;
+        }
+        // media quary end
+      }
+      &--lincense {
+        // media quary start
+        @include media-breakpoint-down(xl) {
+          grid-column: 1/-1;
+          grid-row: 3;
+        }
+        // media quary end
+      }
+    }
+
+    & > p {
+      // media quary start
+      @include media-breakpoint-down(xl) {
+        grid-column: 2/-1;
+        grid-row: 4;
+        margin: 0;
+      }
+      @include media-breakpoint-down(lg) {
+        grid-column: 1/-1;
+        grid-row: 5;
+      }
+      // media quary end
+
+      grid-column: 8/-1;
+      grid-row: 1;
+      align-self: center;
+      @include margin(0 0 2rem 0);
+    }
+
+    & > .nav-link {
+      // media quary start
+      @include media-breakpoint-down(xl) {
+        grid-column: 1/-1;
+        grid-row: 5 / span 4;
+        margin: 0;
+      }
+      @include media-breakpoint-down(lg) {
+        grid-row: 6 / span 5;
+      }
+      // media quary end
+
+      grid-column: 10/-1;
+      grid-row: 4;
+      @include margin(0 0 0 1rem);
+      @include rfs(1.125rem);
+      border-radius: 3rem !important;
+      font-weight: $font-weight-medium;
+
+      i {
+        @include rfs(0.875rem);
+        @include padding(0.4375rem);
+        @include margin(0 0 0 0.375rem);
+      }
+    }
+
+    .card {
+      // media quary start
+      @include media-breakpoint-down(xl) {
+        grid-column: 1/2;
+        grid-row: 4;
+        justify-self: center;
+        margin: 0;
+      }
+      @include media-breakpoint-down(lg) {
+        grid-column: 1/-1;
+      }
+      // media quary end
+
+      grid-column: 1/2;
+      grid-row: 3 / span 2;
+      @include padding(1rem);
+      @include margin(0 2rem 0 0);
+      border: none;
+
+      .card-body {
+        padding: 0 0 0 0.5rem;
+
+        .card-title {
+          @include rfs(1.125rem);
+          font-weight: $font-weight-bold;
+        }
+        .card-text {
+          line-height: 1.2rem;
+        }
+        .nav-link {
+          @include rfs(1.125rem);
+          font-weight: $font-weight-medium;
+
+          i {
+            @include rfs(0.875rem);
+            @include padding(0.4375rem);
+            @include margin(0 0 0 0.375rem);
+          }
+        }
+      }
+    }
+  }
+  .emailSubmission {
+    & > p {
+      // media quary start
+      @include media-breakpoint-down(lg) {
+        padding: 0;
+      }
+      // media quary end
+
+      @include padding(0 14.4375rem 0);
+      @include margin(0 0 2rem);
+    }
+
+    form {
+      input {
+        @include padding(0.8rem 1rem);
+        @include rfs(1.25rem);
+        font-weight: $font-weight-normal;
+        line-height: 1.5rem;
+        color: $inputText;
+        width: 100%;
+
+        &::placeholder {
+          @include rfs(1.25rem);
+          font-weight: $font-weight-normal;
+          line-height: 1.5rem;
+          color: $inputText;
+        }
+      }
+      small {
+        // media quary start
+        @include media-breakpoint-down(md) {
+          bottom: 30%;
+          transform: translateY(-30%);
+        }
+        // media quary end
+
+        bottom: -80%;
+        transform: translateY(-80%);
+        a {
+        }
+      }
+
+      button {
+        // media quary start
+        @include media-breakpoint-down(md) {
+          position: relative;
+          right: 0;
+          top: 0;
+          transform: none;
+        }
+        // media quary end
+        position: absolute;
+        right: 1%;
+        top: 50%;
+        transform: translate(-1%, -50%);
+      }
+    }
+
+    .was-validated :invalid ~ .invalid-feedback,
+    .was-validated :invalid ~ .invalid-tooltip,
+    .is-invalid ~ .invalid-feedback,
+    .is-invalid ~ .invalid-tooltip {
+      display: flex;
+    }
+    .was-validated .form-control:invalid {
+      background-image: none;
+    }
+    .was-validated .form-control:valid {
+      background-image: none;
+    }
+  }
+}

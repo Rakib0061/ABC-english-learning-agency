@@ -1,0 +1,44 @@
+// the color I use
+$darkBlue: #4208b3;
+$blue: #3939ff;
+$indigo: #d2bbff;
+$bgWhite: #e9e9e9;
+$orange: #f75b35;
+$yellow: #ffbb22;
+$customWhite: #e9e9e9;
+$gray: #a4a4a4;
+$inputBG: #efefed;
+$inputText: #909090;
+
+
+// theme color is 60%{offWhite}, 30%{white}, 10%{blueTarquoise};
+$primary: $indigo;
+$secondary: $darkBlue;
+$bg: $customWhite;
+$hero1bar: $yellow;
+$hero2bar: $orange;
+$hero3bar: $blue;
+
+// Import BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// IMPORT GOOGLE FONT
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+
+// theme font family
+$font-family-base: "Arimo", sans-serif;
+
+// theme container class custom width
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px;
+  }
+}
+
+body {
+  background-color: $bg;
+}

@@ -1,0 +1,94 @@
+@use "../custom" as *;
+
+.navbar {
+  // media quary
+  // @include media-breakpoint-down {}
+
+  .navbar-brand {
+    img {
+    }
+  }
+
+  .navbarContent {
+    .leftSide {
+      form {
+        input[type="search"] {
+          background-color: $inputBG;
+          border: none;
+          font-size: 1rem;
+          line-height: 1.25rem;
+          padding: 0.625rem 1.5625rem;
+          color: $inputText;
+          background-image: none;
+
+          &::placeholder {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: $inputText;
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+
+          &::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+          }
+        }
+
+        button {
+          right: 5%;
+          transform: translate(-5%, -50%);
+
+          i {
+            color: $inputText;
+          }
+        }
+      }
+
+      .offcanvasManu {
+        padding: 0.625rem;
+        background-color: $inputBG;
+
+        i {
+          font-size: 1rem;
+          color: $inputText;
+        }
+      }
+    }
+  }
+
+  .rightSide {
+    .authorBtn {
+      background-color: $inputBG;
+      font-size: 1rem;
+      font-weight: $font-weight-semibold;
+      line-height: 1.25rem;
+      padding: 0.375rem 1rem 0.375rem 0.375rem;
+
+      .badge {
+        padding: 0 1.875rem 0 0;
+        img {
+        }
+
+        &:nth-child(1) {
+        }
+        &:nth-child(2) {
+          left: 10%;
+          top: 50%;
+          transform: translate(-10%, -50%);
+        }
+        &:nth-child(3) {
+          left: 18%;
+          top: 50%;
+          transform: translate(-18%, -50%);
+        }
+      }
+    }
+
+    button {
+      padding: 0.5625rem 2.125rem;
+    }
+  }
+}

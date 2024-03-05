@@ -1,0 +1,103 @@
+@use "../custom" as *;
+
+.favoriteTopices {
+  @include margin(6.5rem 0 0);
+  .favoriteTopicesTitle {
+    // media quary
+    @include media-breakpoint-down(xl) {
+      width: 70%;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+
+    border-radius: 3rem 3rem 3rem 0;
+    width: 60%;
+    margin: auto;
+    .display-2 {
+    }
+  }
+
+  .FavItem {
+
+    .titleOfPodcast {
+    transition: all 0.2s linear;
+
+      span {
+        @include padding(0.5rem 1.125rem);
+        @include margin(0 1.5rem 0 0);
+        @include rfs(1.25rem);
+      }
+      a {
+        position: relative;
+        p {
+          @include rfs(3rem);
+          @include padding(1.25rem 0);
+          color: $inputText;
+          transition: all 0.2s linear;
+          @include margin(0 1.5rem 0 0);
+        }
+        img {
+          border-radius: 1.25rem;
+          position: absolute;
+          right: 0%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          visibility: hidden;
+          opacity: 0;
+        }
+        &:hover p {
+          color: $secondary;
+        }
+        &:hover img {
+          // media quiry
+          @include media-breakpoint-down(lg){
+            width: 100%;
+            animation: opacityImgMobile 0.3s linear forwards;
+          };
+          animation: opacityImg 0.3s linear forwards;
+          visibility: visible;
+        }
+      }
+    }
+    .numOfPodcast {
+      p {
+        color: $inputText;
+        @include rfs(1.125rem);
+        line-height: 1.5rem;
+        font-weight: $font-weight-medium;
+        @include padding(0 0.75rem 0 0);
+      }
+      svg {
+
+      }
+    }
+
+    &:hover .titleOfPodcast {
+      transform: translateX(5%);
+    }
+  }
+}
+
+
+@keyframes opacityImg {
+  0%{
+    opacity: 0.1;
+    transform: translate(100%,-50%) rotate(15deg); 
+  }
+  100%{
+    opacity: 1;
+    transform: translate(100%,-50%) rotate(19deg); 
+  }
+}
+
+@keyframes opacityImgMobile {
+  0%{
+    opacity: 0.1;
+    transform: translate(0%,-50%) rotate(15deg); 
+  }
+  100%{
+    opacity: 0.2;
+    transform: translate(0%,-50%) rotate(19deg); 
+  }
+}

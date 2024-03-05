@@ -1,0 +1,164 @@
+@use "../custom" as *;
+
+.display-p {
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  margin: 0;
+
+  &--big {
+    @include rfs(1.125rem);
+    line-height: 1.75rem;
+  }
+  &--small {
+    @include rfs(1rem);
+    line-height: 1.5rem;
+  }
+  
+  &--copywrite{
+    @include rfs(0.8125rem);
+    color: $gray;
+
+  }
+  em {
+    font-style: normal;
+    color: $secondary;
+  }
+}
+
+.display-1 {
+  @include rfs(3.125rem);
+  display: contents;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-base;
+  line-height: normal;
+
+  &--improve {
+    background-color: $hero1bar;
+    border-radius: 3rem 3rem 0;
+    grid-column: 1/8;
+    @include padding(2.125rem);
+    @include margin(0 2rem 2rem 0);
+  }
+  &--native {
+    background-color: $hero2bar;
+    border-radius: 3rem 3rem 3rem 0;
+    grid-column: 3/-1;
+    grid-row: span 2;
+    @include padding(2.125rem);
+    @include margin(0 0 2rem 0);
+  }
+  &--lincense {
+    background-color: $hero3bar;
+    border-radius: 3rem 3rem 0;
+    grid-column: 2/10;
+    grid-row: 4/-1;
+    @include padding(2.125rem);
+  }
+}
+
+.display-2 {
+  display: contents;
+  &--title {
+    display: block;
+    @include padding(2.5rem 5.5rem);
+    border-radius: 3rem 3rem 0 3rem;
+    @include margin(0 0 2rem);
+    @include rfs(3.125rem);
+    font-weight: $font-weight-bold;
+  }
+  &--podcastTitle {
+    @include rfs(2.8125rem);
+    font-weight: $font-weight-semibold;
+    grid-column: span 4;
+  }
+  
+  &--podcastDescription {    
+    @include rfs(2.8125rem);
+    font-weight: $font-weight-semibold;
+    grid-column: 2/span 3;
+    justify-self: center;
+    @include margin(0 0 1rem);
+    sup {
+      @include rfs(1.25rem);
+    }
+  }
+
+  &--cardTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include rfs(1.5rem);
+    line-height: 2rem;
+    font-weight: $font-weight-semibold;
+
+    &--cardAuthor {
+      display: inline-block;
+      @include rfs(1rem);
+      font-weight: $font-weight-normal;
+      color: $inputText;
+    }
+  }
+
+  &--cardHoverTitle {
+    display: inline-block;
+    @include rfs(1.75rem);
+    font-weight: $font-weight-semibold;
+    line-height: 2.25rem;
+  }
+
+  &--lighthouse {
+    @include rfs(1.75rem);
+    line-height: 2.25rem;
+    font-weight: $font-weight-semibold;
+  }
+}
+
+.display-3 {
+  display: block;
+  @include padding(2.5rem 5.5rem);
+  border-radius: 3rem 3rem 3rem 0;
+  @include margin(0 0 2rem);
+  @include rfs(3.125rem);
+  font-weight: $font-weight-bold;
+}
+
+.display-4 {
+  display: block;
+  border-radius: 3rem 3rem 0 3rem;
+  @include padding(2.5rem 5.5rem);
+  @include margin(0 0 2rem);
+  font-weight: $font-weight-bold;
+  &--review {
+    padding: 0;
+    @include margin(0 0 1rem);
+    
+    &--reviewTitle {
+      @include rfs(7.5rem);
+      font-weight: $font-weight-bold;
+    }
+    &--reviewDescip {
+      @include rfs(4rem);
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+.display-5 {
+  display: block;
+  @include padding(2.5rem 5.5rem);
+  border-radius: 3rem 3rem 3rem 0;
+  @include margin(0 0 2rem);
+  font-weight: $font-weight-bold;
+  &--bechameTeacher {
+    @include rfs(2.5rem);
+    margin: 0;
+    padding: 0;
+    padding-right: 12.5rem;
+  }
+}
+
+.display-6 {
+  @include padding(0 13rem 2.5rem);
+  font-weight: $font-weight-medium;
+  margin: 0;
+}

@@ -1,0 +1,40 @@
+@use "../custom" as *;
+
+.btn {
+  font-size: 1rem;
+  font-weight: $font-weight-semibold;
+  font-family: $font-family-base;
+  line-height: 1.25rem;
+  transition: all 0.2s ease-in-out;
+  color: $white;
+  background-color: $secondary;
+  border: 0.125rem solid $secondary;
+  border-radius: 50rem;
+  
+  &:hover {
+    color: $secondary;
+    background-color: transparent;
+    border: 0.125rem solid $secondary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $black;
+  }
+}
+
+.nav-link {
+  &--a {
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $black;
+    }
+
+    &:visited {
+        color: $black;
+    }
+  }
+}
