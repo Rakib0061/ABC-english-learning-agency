@@ -366,311 +366,635 @@
             <h2 class="display-2 display-2--title bg-primary">Our Content</h2>
           </div>
 
-          <!-- SLIDER PAGENATION BAR START -->
+          <div class="position-relative">
+            <!-- SLIDER PAGENATION BAR START -->
           <div
-            class="pagenationBar d-flex justify-content-between align-items-center bg-white rounded-5 p-3 mb-4"
-          >
-            <button class="btn border-2 border-secondary rounded-pill">
-              Popular
-            </button>
-            <p class="display-p display-p--big">Podcast</p>
-            <button class="btn border-2 border-secondary rounded-pill">
-              Popular
-            </button>
+          class="pagenationBar d-flex justify-content-between align-items-center bg-white rounded-5 mb-4"
+        >
+          <button class="btn border-2 border-secondary rounded-pill">
+            Popular
+          </button>
+          <p class="display-p display-p--big d-flex flex-column">Podcast <span class="mt-2"></span> </p>
+          <button class="btn border-2 border-secondary rounded-pill">
+            Popular
+          </button>
+        </div>
+        <!-- SLIDER PAGENATION BAR END -->
+        
+        <!-- 💥💥💥💥💥💥💥 -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators mb-0 ">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
-          <!-- SLIDER PAGENATION BAR END -->
-          <div class="PodcastTopic bg-white d-grid">
-            <!-- PODCAST H2 TITLE START -->
-            <h2 class="display-2">
-              <span class="display-2--podcastTitle"
-                >Get started your day with us</span
-              >
-              <span class="display-2--podcastDescription"
-                ><sup class="text-secondary">01</sup>Podcasts on any topic</span
-              >
-            </h2>
-            <!-- PODCAST H2 TITLE END -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- slider 1 start -->
+              <!-- SLIDER PAGENATION BAR END -->
+        <div class="PodcastTopic bg-white d-grid">
+          <!-- PODCAST H2 TITLE START -->
+          <h2 class="display-2">
+            <span class="display-2--podcastTitle"
+              >Get started your day with us</span
+            >
+            <span class="display-2--podcastDescription"
+              ><sup class="text-secondary">01</sup>Podcasts on any topic</span
+            >
+          </h2>
+          <!-- PODCAST H2 TITLE END -->
 
-            <!-- PODCAST P ITEM END -->
-            <p class="display-p display-p--big">
-              The <em>school's mission</em> is to empower students with the
-              language skills they need for personal and
-              <em>professional success.</em>
-            </p>
-            <!-- PODCAST P ITEM START -->
+          <!-- PODCAST P ITEM END -->
+          <p class="display-p display-p--big">
+            The <em>school's mission</em> is to empower students with the
+            language skills they need for personal and
+            <em>professional success.</em>
+          </p>
+          <!-- PODCAST P ITEM START -->
 
-            <div class="allCard">
-              <!-- PODCAST 1st CARD ITEM START -->
-              <div class="podcast1">
-                <div class="card border-0 rounded-4 p-3" style="width: 22rem">
-                  <div class="card-head position-relative">
-                    <img
-                      src="./public/images/podcast_imgs/podcast1.webp"
-                      loading="lazy"
-                      decoding="async"
-                      width="332"
-                      height="248"
-                      class="card-img-top rounded-3 position-relative object-fit-cover"
-                      alt="habit of speaking podcast"
-                    />
-                    <div
-                      class="active bg-primary rounded-3 position-absolute w-100 h-100 d-flex flex-column justify-content-between"
-                    >
-                      <!-- hover card heading start -->
-                      <h2 class="display-2 display-2--cardHoverTitle">
-                        Start your day
-                        <span class="text-secondary d-block">with us</span>
-                      </h2>
-                      <!-- hover card heading end -->
-
-                      <!-- badge on hovereffect start -->
-                      <div class="d-flex justify-content-center">
-                        <div
-                          class="rounded-pill bg-white position-relative ml-0 d-flex justify-content-between align-items-center authorBatch p-2"
-                        >
-                          <figure class="badge rounded-pill p-0 mb-0 me-2">
-                            <img
-                              src="./public/images/podcast_imgs/podcasBadge.webp"
-                              loading="lazy"
-                              decoding="async"
-                              width="48"
-                              height="48"
-                              class="img-fluid"
-                              alt="badge img 1"
-                              aria-hidden="true"
-                            />
-                          </figure>
-                          <p class="display-p--big d-flex flex-column m-0">
-                            <span class="display-p display-p--small"
-                              >Author - Neil Olison </span
-                            >Run in English
-                          </p>
-                        </div>
-                      </div>
-                      <!-- badge on hovereffect end -->
-
-                      <!-- visual audio analizer start -->
-                      <div class="position-relative d-flex audioVisualizer">
-                        <button
-                          class="btn btnAudio position-absolute top-50 start-50 translate-middle bg-primary p-2 rounded-pill"
-
-                        >
-                        <i class="fa-solid fa-play"></i>
-                        <i class="fa-solid fa-headphones d-none"></i>
-                        </button>
-                        <canvas id="canvas" class="w-100"></canvas>
-                      </div>
-                      <!-- visual audio analizer end -->
-                    </div>
-                  </div>
-                  <div class="card-body p-0 mt-3">
-                    <h2 class="card-title display-2 display-2--cardTitle">
-                      Habit of Speaking
-                      <span class="display-2 display-2--cardTitle--cardAuthor"
-                        >From Alan</span
-                      >
-                    </h2>
-                    <p class="card-text display-p--small">
-                      The habitual use of descriptive language while speaking is
-                      commonly referred to as "descriptive speech." This
-                      communication style involves using vivid and detailed
-                      words to convey ideas,
-                    </p>
-                    <button class="btn border-secondary border-2 rounded-pill">
-                      Go to Podcast
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- PODCAST 1st CARD ITEM END -->
-
-              <!-- PODCAST 2nd CARD ITEM START -->
-              <div class="podcast2">
-                <div class="card border-0 rounded-4 p-3" style="width: 22rem">
-                  <div class="card-head position-relative">
-                    <img
-                      src="./public/images/podcast_imgs/podcast1.webp"
-                      loading="lazy"
-                      decoding="async"
-                      width="332"
-                      height="248"
-                      class="card-img-top rounded-3 position-relative object-fit-cover "
-                      alt="habit of speaking podcast"
-                    />
-                    <div
-                      class="active bg-primary rounded-3 position-absolute w-100 h-100 d-flex flex-column justify-content-between"
-                    >
-                      <!-- hover card heading start -->
-                      <h2 class="display-2 display-2--cardHoverTitle">
-                        Start your day
-                        <span class="text-secondary d-block">with us</span>
-                      </h2>
-                      <!-- hover card heading end -->
-
-                      <!-- badge on hovereffect start -->
-                      <div class="d-flex justify-content-center">
-                        <div
-                          class="rounded-pill bg-white position-relative ml-0 d-flex justify-content-between align-items-center authorBatch p-2"
-                        >
-                          <figure class="badge rounded-pill p-0 mb-0 me-2">
-                            <img
-                              src="./public/images/podcast_imgs/podcasBadge.webp"
-                              loading="lazy"
-                              decoding="async"
-                              width="48"
-                              height="48"
-                              class="img-fluid"
-                              alt="badge img 1"
-                              aria-hidden="true"
-                            />
-                          </figure>
-                          <p class="display-p--big d-flex flex-column m-0">
-                            <span class="display-p display-p--small"
-                              >Author - Neil Olison </span
-                            >Run in English
-                          </p>
-                        </div>
-                      </div>
-                      <!-- badge on hovereffect end -->
-
-                      <!-- visual audio analizer start -->
-                      <div class="position-relative d-flex audioVisualizer">
-                        <button
-                          class="btn btnAudio position-absolute top-50 start-50 translate-middle bg-primary p-2 rounded-pill"
-                        >
-                        <i class="fa-solid fa-play"></i>
-                        <i class="fa-solid fa-headphones d-none"></i>
-                        </button>
-                        <canvas id="canvas" class="w-100"></canvas>
-                      </div>
-                      <!-- visual audio analizer end -->
-                    </div>
-                  </div>
-                  <div class="card-body p-0 mt-3">
-                    <h2 class="card-title display-2 display-2--cardTitle">
-                      Habit of Speaking
-                      <span class="display-2 display-2--cardTitle--cardAuthor"
-                        >From Alan</span
-                      >
-                    </h2>
-                    <p class="card-text display-p--small">
-                      The habitual use of descriptive language while speaking is
-                      commonly referred to as "descriptive speech." This
-                      communication style involves using vivid and detailed
-                      words to convey ideas,
-                    </p>
-                    <button class="btn border-secondary border-2 rounded-pill">
-                      Go to Podcast
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- PODCAST 2nd CARD ITEM END -->
-
-              <!-- LIGHTHOUSE CONVERSITION START -->
-              <div class="lighthouse">
-                <div
-                  class="card border-0 rounded-4"
-                  style="width: 100%; height: 100%"
-                >
+          <div class="allCard">
+            <!-- PODCAST 1st CARD ITEM START -->
+            <div class="podcast1">
+              <div class="card border-0 rounded-4 p-3" style="width: 22rem">
+                <div class="card-head position-relative">
+                  <img
+                    src="./public/images/podcast_imgs/podcast1.webp"
+                    loading="lazy"
+                    decoding="async"
+                    width="332"
+                    height="248"
+                    class="card-img-top rounded-3 position-relative object-fit-cover"
+                    alt="habit of speaking podcast"
+                  />
                   <div
-                    class="card-body d-flex justify-content-between align-items-center flex-column"
+                    class="active bg-primary rounded-3 position-absolute w-100 h-100 d-flex flex-column justify-content-between"
                   >
-                    <h2 class="display-2--lighthouse">
-                      The Lighthouse
-                      <span class="text-secondary">Conversation</span>
+                    <!-- hover card heading start -->
+                    <h2 class="display-2 display-2--cardHoverTitle">
+                      Start your day
+                      <span class="text-secondary d-block">with us</span>
                     </h2>
-                    <p class="display-p display-p--small card-text">
-                      The group approached <em>the lighthouse,</em> marveling at
-                      its beauty and history. As they climbed the winding
-                      staircase, <em>they couldn't help</em> but feel a sense of
-                      awe and reverence.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center w-100 py-3 py-lg-0"
-                    >
-                      <label for="Lighthouse_icon">
-                        <a
-                          href="#"
-                          class="nav-link nav-link--a text-secondary display-p display-p--big"
-                        >
-                          Read More
-                        </a>
-                      </label>
-                      <button id="Lighthouse_icon" class="btn">
-                        <i
-                          class="fa-solid fa-arrow-right"
-                          aria-level="read more button"
-                        ></i>
+                    <!-- hover card heading end -->
+
+                    <!-- badge on hovereffect start -->
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="rounded-pill bg-white position-relative ml-0 d-flex justify-content-between align-items-center authorBatch p-2"
+                      >
+                        <figure class="badge rounded-pill p-0 mb-0 me-2">
+                          <img
+                            src="./public/images/podcast_imgs/podcasBadge.webp"
+                            loading="lazy"
+                            decoding="async"
+                            width="48"
+                            height="48"
+                            class="img-fluid"
+                            alt="badge img 1"
+                            aria-hidden="true"
+                          />
+                        </figure>
+                        <p class="display-p--big d-flex flex-column m-0">
+                          <span class="display-p display-p--small"
+                            >Author - Neil Olison </span
+                          >Run in English
+                        </p>
+                      </div>
+                    </div>
+                    <!-- badge on hovereffect end -->
+
+                    <!-- visual audio analizer start -->
+                    <div class="position-relative d-flex audioVisualizer">
+                      <button
+                        class="btn btnAudio position-absolute top-50 start-50 translate-middle bg-primary p-2 rounded-pill"
+
+                      >
+                      <i class="fa-solid fa-play"></i>
+                      <i class="fa-solid fa-headphones d-none"></i>
                       </button>
+                      <canvas id="canvas" class="w-100"></canvas>
                     </div>
+                    <!-- visual audio analizer end -->
                   </div>
                 </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title display-2 display-2--cardTitle">
+                    Habit of Speaking
+                    <span class="display-2 display-2--cardTitle--cardAuthor"
+                      >From Alan</span
+                    >
+                  </h2>
+                  <p class="card-text display-p--small">
+                    The habitual use of descriptive language while speaking is
+                    commonly referred to as "descriptive speech." This
+                    communication style involves using vivid and detailed
+                    words to convey ideas,
+                  </p>
+                  <button class="btn border-secondary border-2 rounded-pill">
+                    Go to Podcast
+                  </button>
+                </div>
               </div>
-              <!-- LIGHTHOUSE CONVERSITION END -->
+            </div>
+            <!-- PODCAST 1st CARD ITEM END -->
 
-              <!-- LASTCHILD START -->
-              <div class="lastChild">
-                <div
-                  class="card border-0 rounded-4 p-3 d-flex justify-content-between align-items-center flex-column"
-                  style="width: 100%; height: 100%"
-                >
+            <!-- PODCAST 2nd CARD ITEM START -->
+            <div class="podcast2">
+              <div class="card border-0 rounded-4 p-3" style="width: 22rem">
+                <div class="card-head position-relative">
+                  <img
+                    src="./public/images/podcast_imgs/podcast1.webp"
+                    loading="lazy"
+                    decoding="async"
+                    width="332"
+                    height="248"
+                    class="card-img-top rounded-3 position-relative object-fit-cover "
+                    alt="habit of speaking podcast"
+                  />
                   <div
-                    class="d-flex justify-content-between align-items-center w-100"
+                    class="active bg-primary rounded-3 position-absolute w-100 h-100 d-flex flex-column justify-content-between"
                   >
-                    <label for="lastChild_icon">
+                    <!-- hover card heading start -->
+                    <h2 class="display-2 display-2--cardHoverTitle">
+                      Start your day
+                      <span class="text-secondary d-block">with us</span>
+                    </h2>
+                    <!-- hover card heading end -->
+
+                    <!-- badge on hovereffect start -->
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="rounded-pill bg-white position-relative ml-0 d-flex justify-content-between align-items-center authorBatch p-2"
+                      >
+                        <figure class="badge rounded-pill p-0 mb-0 me-2">
+                          <img
+                            src="./public/images/podcast_imgs/podcasBadge.webp"
+                            loading="lazy"
+                            decoding="async"
+                            width="48"
+                            height="48"
+                            class="img-fluid"
+                            alt="badge img 1"
+                            aria-hidden="true"
+                          />
+                        </figure>
+                        <p class="display-p--big d-flex flex-column m-0">
+                          <span class="display-p display-p--small"
+                            >Author - Neil Olison </span
+                          >Run in English
+                        </p>
+                      </div>
+                    </div>
+                    <!-- badge on hovereffect end -->
+
+                    <!-- visual audio analizer start -->
+                    <div class="position-relative d-flex audioVisualizer">
+                      <button
+                        class="btn btnAudio position-absolute top-50 start-50 translate-middle bg-primary p-2 rounded-pill"
+                      >
+                      <i class="fa-solid fa-play"></i>
+                      <i class="fa-solid fa-headphones d-none"></i>
+                      </button>
+                      <canvas id="canvas" class="w-100"></canvas>
+                    </div>
+                    <!-- visual audio analizer end -->
+                  </div>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title display-2 display-2--cardTitle">
+                    Habit of Speaking
+                    <span class="display-2 display-2--cardTitle--cardAuthor"
+                      >From Alan</span
+                    >
+                  </h2>
+                  <p class="card-text display-p--small">
+                    The habitual use of descriptive language while speaking is
+                    commonly referred to as "descriptive speech." This
+                    communication style involves using vivid and detailed
+                    words to convey ideas,
+                  </p>
+                  <button class="btn border-secondary border-2 rounded-pill">
+                    Go to Podcast
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- PODCAST 2nd CARD ITEM END -->
+
+            <!-- LIGHTHOUSE CONVERSITION START -->
+            <div class="lighthouse">
+              <div
+                class="card border-0 rounded-4"
+                style="width: 100%; height: 100%"
+              >
+                <div
+                  class="card-body d-flex justify-content-between align-items-center flex-column"
+                >
+                  <h2 class="display-2--lighthouse">
+                    The Lighthouse
+                    <span class="text-secondary">Conversation</span>
+                  </h2>
+                  <p class="display-p display-p--small card-text">
+                    The group approached <em>the lighthouse,</em> marveling at
+                    its beauty and history. As they climbed the winding
+                    staircase, <em>they couldn't help</em> but feel a sense of
+                    awe and reverence.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 py-3 py-lg-0"
+                  >
+                    <label for="Lighthouse_icon">
                       <a
                         href="#"
                         class="nav-link nav-link--a text-secondary display-p display-p--big"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="44"
-                          height="44"
-                          viewBox="0 0 44 44"
-                          fill="none"
-                        >
-                          <rect
-                            x="0.75"
-                            y="0.75"
-                            width="42.5"
-                            height="42.5"
-                            rx="21.25"
-                            stroke="#4208B3"
-                            stroke-width="1.5"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M22 13.75C19.812 13.75 17.7135 14.6192 16.1664 16.1664C14.6192 17.7135 13.75 19.812 13.75 22V28C13.75 28.4142 13.4142 28.75 13 28.75C12.5858 28.75 12.25 28.4142 12.25 28V22C12.25 19.4141 13.2772 16.9342 15.1057 15.1057C16.9342 13.2772 19.4141 12.25 22 12.25C24.5859 12.25 27.0658 13.2772 28.8943 15.1057C30.7228 16.9342 31.75 19.4141 31.75 22V28C31.75 28.4142 31.4142 28.75 31 28.75C30.5858 28.75 30.25 28.4142 30.25 28V22C30.25 19.812 29.3808 17.7135 27.8336 16.1664C26.2865 14.6192 24.188 13.75 22 13.75Z"
-                            fill="#4208B3"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12.25 24C12.25 23.5858 12.5858 23.25 13 23.25H16C16.7293 23.25 17.4288 23.5397 17.9445 24.0555C18.4603 24.5712 18.75 25.2707 18.75 26V29C18.75 29.7293 18.4603 30.4288 17.9445 30.9445C17.4288 31.4603 16.7293 31.75 16 31.75H15C14.2707 31.75 13.5712 31.4603 13.0555 30.9445C12.5397 30.4288 12.25 29.7293 12.25 29V24ZM13.75 24.75V29C13.75 29.3315 13.8817 29.6495 14.1161 29.8839C14.3505 30.1183 14.6685 30.25 15 30.25H16C16.3315 30.25 16.6495 30.1183 16.8839 29.8839C17.1183 29.6495 17.25 29.3315 17.25 29V26C17.25 25.6685 17.1183 25.3505 16.8839 25.1161C16.6495 24.8817 16.3315 24.75 16 24.75H13.75ZM28 24.75C27.6685 24.75 27.3505 24.8817 27.1161 25.1161C26.8817 25.3505 26.75 25.6685 26.75 26V29C26.75 29.3315 26.8817 29.6495 27.1161 29.8839C27.3505 30.1183 27.6685 30.25 28 30.25H29C29.3315 30.25 29.6495 30.1183 29.8839 29.8839C30.1183 29.6495 30.25 29.3315 30.25 29V24.75H28ZM26.0555 24.0555C26.5712 23.5397 27.2707 23.25 28 23.25H31C31.4142 23.25 31.75 23.5858 31.75 24V29C31.75 29.7293 31.4603 30.4288 30.9445 30.9445C30.4288 31.4603 29.7293 31.75 29 31.75H28C27.2707 31.75 26.5712 31.4603 26.0555 30.9445C25.5397 30.4288 25.25 29.7293 25.25 29V26C25.25 25.2707 25.5397 24.5712 26.0555 24.0555Z"
-                            fill="#4208B3"
-                          />
-                        </svg>
+                        Read More
                       </a>
                     </label>
-                    <button id="lastChild_icon" class="btn">
+                    <button id="Lighthouse_icon" class="btn">
                       <i
                         class="fa-solid fa-arrow-right"
                         aria-level="read more button"
                       ></i>
                     </button>
                   </div>
-                  <p class="card-text display-p display-p--small">
-                    Our podcasts can inspire you not only to
-                    <em>speak English</em> every day but
-                    <em>also to think</em> it.
-                  </p>
                 </div>
               </div>
-              <!-- LASTCHILD END -->
+            </div>
+            <!-- LIGHTHOUSE CONVERSITION END -->
+
+            <!-- LASTCHILD START -->
+            <div class="lastChild">
+              <div
+                class="card border-0 rounded-4 p-3 d-flex justify-content-between align-items-center flex-column"
+                style="width: 100%; height: 100%"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-center w-100"
+                >
+                  <label for="lastChild_icon">
+                    <a
+                      href="#"
+                      class="nav-link nav-link--a text-secondary display-p display-p--big"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 44 44"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.75"
+                          y="0.75"
+                          width="42.5"
+                          height="42.5"
+                          rx="21.25"
+                          stroke="#4208B3"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M22 13.75C19.812 13.75 17.7135 14.6192 16.1664 16.1664C14.6192 17.7135 13.75 19.812 13.75 22V28C13.75 28.4142 13.4142 28.75 13 28.75C12.5858 28.75 12.25 28.4142 12.25 28V22C12.25 19.4141 13.2772 16.9342 15.1057 15.1057C16.9342 13.2772 19.4141 12.25 22 12.25C24.5859 12.25 27.0658 13.2772 28.8943 15.1057C30.7228 16.9342 31.75 19.4141 31.75 22V28C31.75 28.4142 31.4142 28.75 31 28.75C30.5858 28.75 30.25 28.4142 30.25 28V22C30.25 19.812 29.3808 17.7135 27.8336 16.1664C26.2865 14.6192 24.188 13.75 22 13.75Z"
+                          fill="#4208B3"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.25 24C12.25 23.5858 12.5858 23.25 13 23.25H16C16.7293 23.25 17.4288 23.5397 17.9445 24.0555C18.4603 24.5712 18.75 25.2707 18.75 26V29C18.75 29.7293 18.4603 30.4288 17.9445 30.9445C17.4288 31.4603 16.7293 31.75 16 31.75H15C14.2707 31.75 13.5712 31.4603 13.0555 30.9445C12.5397 30.4288 12.25 29.7293 12.25 29V24ZM13.75 24.75V29C13.75 29.3315 13.8817 29.6495 14.1161 29.8839C14.3505 30.1183 14.6685 30.25 15 30.25H16C16.3315 30.25 16.6495 30.1183 16.8839 29.8839C17.1183 29.6495 17.25 29.3315 17.25 29V26C17.25 25.6685 17.1183 25.3505 16.8839 25.1161C16.6495 24.8817 16.3315 24.75 16 24.75H13.75ZM28 24.75C27.6685 24.75 27.3505 24.8817 27.1161 25.1161C26.8817 25.3505 26.75 25.6685 26.75 26V29C26.75 29.3315 26.8817 29.6495 27.1161 29.8839C27.3505 30.1183 27.6685 30.25 28 30.25H29C29.3315 30.25 29.6495 30.1183 29.8839 29.8839C30.1183 29.6495 30.25 29.3315 30.25 29V24.75H28ZM26.0555 24.0555C26.5712 23.5397 27.2707 23.25 28 23.25H31C31.4142 23.25 31.75 23.5858 31.75 24V29C31.75 29.7293 31.4603 30.4288 30.9445 30.9445C30.4288 31.4603 29.7293 31.75 29 31.75H28C27.2707 31.75 26.5712 31.4603 26.0555 30.9445C25.5397 30.4288 25.25 29.7293 25.25 29V26C25.25 25.2707 25.5397 24.5712 26.0555 24.0555Z"
+                          fill="#4208B3"
+                        />
+                      </svg>
+                    </a>
+                  </label>
+                  <button id="lastChild_icon" class="btn">
+                    <i
+                      class="fa-solid fa-arrow-right"
+                      aria-level="read more button"
+                    ></i>
+                  </button>
+                </div>
+                <p class="card-text display-p display-p--small">
+                  Our podcasts can inspire you not only to
+                  <em>speak English</em> every day but
+                  <em>also to think</em> it.
+                </p>
+              </div>
+            </div>
+            <!-- LASTCHILD END -->
+          </div>
+        </div>
+              <!-- slider 1 end -->
+            </div>
+            <div class="carousel-item">
+              <!-- slider 2 start -->
+              <!-- SLIDER PAGENATION BAR END -->
+        <div class="PodcastTopic bg-white d-grid">
+          <!-- PODCAST H2 TITLE START -->
+          <h2 class="display-2">
+            <span class="display-2--podcastTitle"
+              >Get started your day with us</span
+            >
+            <span class="display-2--podcastDescription"
+              ><sup class="text-secondary">01</sup>Podcasts on any topic</span
+            >
+          </h2>
+          <!-- PODCAST H2 TITLE END -->
+
+          <!-- PODCAST P ITEM END -->
+          <p class="display-p display-p--big">
+            The <em>school's mission</em> is to empower students with the
+            language skills they need for personal and
+            <em>professional success.</em>
+          </p>
+          <!-- PODCAST P ITEM START -->
+
+          <div class="allCard">
+            <!-- PODCAST 1st CARD ITEM START -->
+            <div class="podcast1">
+              <div class="card border-0 rounded-4 p-3" style="width: 22rem">
+                <div class="card-head position-relative">
+                  <img
+                    src="./public/images/podcast_imgs/podcast1.webp"
+                    loading="lazy"
+                    decoding="async"
+                    width="332"
+                    height="248"
+                    class="card-img-top rounded-3 position-relative object-fit-cover"
+                    alt="habit of speaking podcast"
+                  />
+                  <div
+                    class="active bg-primary rounded-3 position-absolute w-100 h-100 d-flex flex-column justify-content-between"
+                  >
+                    <!-- hover card heading start -->
+                    <h2 class="display-2 display-2--cardHoverTitle">
+                      Start your day
+                      <span class="text-secondary d-block">with us</span>
+                    </h2>
+                    <!-- hover card heading end -->
+
+                    <!-- badge on hovereffect start -->
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="rounded-pill bg-white position-relative ml-0 d-flex justify-content-between align-items-center authorBatch p-2"
+                      >
+                        <figure class="badge rounded-pill p-0 mb-0 me-2">
+                          <img
+                            src="./public/images/podcast_imgs/podcasBadge.webp"
+                            loading="lazy"
+                            decoding="async"
+                            width="48"
+                            height="48"
+                            class="img-fluid"
+                            alt="badge img 1"
+                            aria-hidden="true"
+                          />
+                        </figure>
+                        <p class="display-p--big d-flex flex-column m-0">
+                          <span class="display-p display-p--small"
+                            >Author - Neil Olison </span
+                          >Run in English
+                        </p>
+                      </div>
+                    </div>
+                    <!-- badge on hovereffect end -->
+
+                    <!-- visual audio analizer start -->
+                    <div class="position-relative d-flex audioVisualizer">
+                      <button
+                        class="btn btnAudio position-absolute top-50 start-50 translate-middle bg-primary p-2 rounded-pill"
+
+                      >
+                      <i class="fa-solid fa-play"></i>
+                      <i class="fa-solid fa-headphones d-none"></i>
+                      </button>
+                      <canvas id="canvas" class="w-100"></canvas>
+                    </div>
+                    <!-- visual audio analizer end -->
+                  </div>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title display-2 display-2--cardTitle">
+                    Habit of Speaking
+                    <span class="display-2 display-2--cardTitle--cardAuthor"
+                      >From Alan</span
+                    >
+                  </h2>
+                  <p class="card-text display-p--small">
+                    The habitual use of descriptive language while speaking is
+                    commonly referred to as "descriptive speech." This
+                    communication style involves using vivid and detailed
+                    words to convey ideas,
+                  </p>
+                  <button class="btn border-secondary border-2 rounded-pill">
+                    Go to Podcast
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- PODCAST 1st CARD ITEM END -->
+
+            <!-- PODCAST 2nd CARD ITEM START -->
+            <div class="podcast2">
+              <div class="card border-0 rounded-4 p-3" style="width: 22rem">
+                <div class="card-head position-relative">
+                  <img
+                    src="./public/images/podcast_imgs/podcast1.webp"
+                    loading="lazy"
+                    decoding="async"
+                    width="332"
+                    height="248"
+                    class="card-img-top rounded-3 position-relative object-fit-cover "
+                    alt="habit of speaking podcast"
+                  />
+                  <div
+                    class="active bg-primary rounded-3 position-absolute w-100 h-100 d-flex flex-column justify-content-between"
+                  >
+                    <!-- hover card heading start -->
+                    <h2 class="display-2 display-2--cardHoverTitle">
+                      Start your day
+                      <span class="text-secondary d-block">with us</span>
+                    </h2>
+                    <!-- hover card heading end -->
+
+                    <!-- badge on hovereffect start -->
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="rounded-pill bg-white position-relative ml-0 d-flex justify-content-between align-items-center authorBatch p-2"
+                      >
+                        <figure class="badge rounded-pill p-0 mb-0 me-2">
+                          <img
+                            src="./public/images/podcast_imgs/podcasBadge.webp"
+                            loading="lazy"
+                            decoding="async"
+                            width="48"
+                            height="48"
+                            class="img-fluid"
+                            alt="badge img 1"
+                            aria-hidden="true"
+                          />
+                        </figure>
+                        <p class="display-p--big d-flex flex-column m-0">
+                          <span class="display-p display-p--small"
+                            >Author - Neil Olison </span
+                          >Run in English
+                        </p>
+                      </div>
+                    </div>
+                    <!-- badge on hovereffect end -->
+
+                    <!-- visual audio analizer start -->
+                    <div class="position-relative d-flex audioVisualizer">
+                      <button
+                        class="btn btnAudio position-absolute top-50 start-50 translate-middle bg-primary p-2 rounded-pill"
+                      >
+                      <i class="fa-solid fa-play"></i>
+                      <i class="fa-solid fa-headphones d-none"></i>
+                      </button>
+                      <canvas id="canvas" class="w-100"></canvas>
+                    </div>
+                    <!-- visual audio analizer end -->
+                  </div>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title display-2 display-2--cardTitle">
+                    Habit of Speaking
+                    <span class="display-2 display-2--cardTitle--cardAuthor"
+                      >From Alan</span
+                    >
+                  </h2>
+                  <p class="card-text display-p--small">
+                    The habitual use of descriptive language while speaking is
+                    commonly referred to as "descriptive speech." This
+                    communication style involves using vivid and detailed
+                    words to convey ideas,
+                  </p>
+                  <button class="btn border-secondary border-2 rounded-pill">
+                    Go to Podcast
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- PODCAST 2nd CARD ITEM END -->
+
+            <!-- LIGHTHOUSE CONVERSITION START -->
+            <div class="lighthouse">
+              <div
+                class="card border-0 rounded-4"
+                style="width: 100%; height: 100%"
+              >
+                <div
+                  class="card-body d-flex justify-content-between align-items-center flex-column"
+                >
+                  <h2 class="display-2--lighthouse">
+                    The Lighthouse
+                    <span class="text-secondary">Conversation</span>
+                  </h2>
+                  <p class="display-p display-p--small card-text">
+                    The group approached <em>the lighthouse,</em> marveling at
+                    its beauty and history. As they climbed the winding
+                    staircase, <em>they couldn't help</em> but feel a sense of
+                    awe and reverence.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 py-3 py-lg-0"
+                  >
+                    <label for="Lighthouse_icon">
+                      <a
+                        href="#"
+                        class="nav-link nav-link--a text-secondary display-p display-p--big"
+                      >
+                        Read More
+                      </a>
+                    </label>
+                    <button id="Lighthouse_icon" class="btn">
+                      <i
+                        class="fa-solid fa-arrow-right"
+                        aria-level="read more button"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- LIGHTHOUSE CONVERSITION END -->
+
+            <!-- LASTCHILD START -->
+            <div class="lastChild">
+              <div
+                class="card border-0 rounded-4 p-3 d-flex justify-content-between align-items-center flex-column"
+                style="width: 100%; height: 100%"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-center w-100"
+                >
+                  <label for="lastChild_icon">
+                    <a
+                      href="#"
+                      class="nav-link nav-link--a text-secondary display-p display-p--big"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="44"
+                        height="44"
+                        viewBox="0 0 44 44"
+                        fill="none"
+                      >
+                        <rect
+                          x="0.75"
+                          y="0.75"
+                          width="42.5"
+                          height="42.5"
+                          rx="21.25"
+                          stroke="#4208B3"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M22 13.75C19.812 13.75 17.7135 14.6192 16.1664 16.1664C14.6192 17.7135 13.75 19.812 13.75 22V28C13.75 28.4142 13.4142 28.75 13 28.75C12.5858 28.75 12.25 28.4142 12.25 28V22C12.25 19.4141 13.2772 16.9342 15.1057 15.1057C16.9342 13.2772 19.4141 12.25 22 12.25C24.5859 12.25 27.0658 13.2772 28.8943 15.1057C30.7228 16.9342 31.75 19.4141 31.75 22V28C31.75 28.4142 31.4142 28.75 31 28.75C30.5858 28.75 30.25 28.4142 30.25 28V22C30.25 19.812 29.3808 17.7135 27.8336 16.1664C26.2865 14.6192 24.188 13.75 22 13.75Z"
+                          fill="#4208B3"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.25 24C12.25 23.5858 12.5858 23.25 13 23.25H16C16.7293 23.25 17.4288 23.5397 17.9445 24.0555C18.4603 24.5712 18.75 25.2707 18.75 26V29C18.75 29.7293 18.4603 30.4288 17.9445 30.9445C17.4288 31.4603 16.7293 31.75 16 31.75H15C14.2707 31.75 13.5712 31.4603 13.0555 30.9445C12.5397 30.4288 12.25 29.7293 12.25 29V24ZM13.75 24.75V29C13.75 29.3315 13.8817 29.6495 14.1161 29.8839C14.3505 30.1183 14.6685 30.25 15 30.25H16C16.3315 30.25 16.6495 30.1183 16.8839 29.8839C17.1183 29.6495 17.25 29.3315 17.25 29V26C17.25 25.6685 17.1183 25.3505 16.8839 25.1161C16.6495 24.8817 16.3315 24.75 16 24.75H13.75ZM28 24.75C27.6685 24.75 27.3505 24.8817 27.1161 25.1161C26.8817 25.3505 26.75 25.6685 26.75 26V29C26.75 29.3315 26.8817 29.6495 27.1161 29.8839C27.3505 30.1183 27.6685 30.25 28 30.25H29C29.3315 30.25 29.6495 30.1183 29.8839 29.8839C30.1183 29.6495 30.25 29.3315 30.25 29V24.75H28ZM26.0555 24.0555C26.5712 23.5397 27.2707 23.25 28 23.25H31C31.4142 23.25 31.75 23.5858 31.75 24V29C31.75 29.7293 31.4603 30.4288 30.9445 30.9445C30.4288 31.4603 29.7293 31.75 29 31.75H28C27.2707 31.75 26.5712 31.4603 26.0555 30.9445C25.5397 30.4288 25.25 29.7293 25.25 29V26C25.25 25.2707 25.5397 24.5712 26.0555 24.0555Z"
+                          fill="#4208B3"
+                        />
+                      </svg>
+                    </a>
+                  </label>
+                  <button id="lastChild_icon" class="btn">
+                    <i
+                      class="fa-solid fa-arrow-right"
+                      aria-level="read more button"
+                    ></i>
+                  </button>
+                </div>
+                <p class="card-text display-p display-p--small">
+                  Our podcasts can inspire you not only to
+                  <em>speak English</em> every day but
+                  <em>also to think</em> it.
+                </p>
+              </div>
+            </div>
+            <!-- LASTCHILD END -->
+          </div>
+        </div>
+              <!-- slider 2 end -->
             </div>
           </div>
+          <button class="carousel-control-prev bg-secondary rounded-pill" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next bg-secondary rounded-pill" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- 💥💥💥💥💥💥💥 -->
+          </div>
+
         </div>
       </section>
       <!--  @@@@@@@@@@@@ CONTENT AREA END @@@@@@@@@@@@  -->
