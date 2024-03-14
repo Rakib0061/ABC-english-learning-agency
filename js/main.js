@@ -5,15 +5,6 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 // import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 
 // 🔴@@@@@@@@@@@@@@@@ BOOTSTRAP JS BEGIN @@@@@@@@@@@@@@@@
-// ✅TOOLTIP bs-Js
-const tooltipTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="tooltip"]'
-);
-const tooltipList = [...tooltipTriggerList].map(
-  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-);
-// ✅TOOLTIP bs-Js
-
 // ✅FORM VALIDATION bs-jS
 (() => {
   "use strict";
